@@ -1,31 +1,35 @@
 package me.sturk.RealCraft;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.World;
 
-public class Cable extends Block {
+public class Cable extends BlockContainer {
 
-    private static int Side;
+    private float pixel = 1F/16F;
 
     public Cable(Material material) {
         super(material);
         setCreativeTab(Main.realTab);
-        setBlockBounds(0.4F, 0.4F, 0.4F, 0.6F, 0.6F, 0.6F);
-
-        if(Side==0) {
-
-        }
+        setBlockBounds(10*pixel/2, 10*pixel/2, 10*pixel/2, 10*pixel, 10*pixel, 10*pixel);
+        this.useNeighborBrightness=true;
     }
 
-    public static void CableInfo(int side, int x, int y, int z, Block block) {
-        Side = side;
+    public int getRenderType() {
+        return -1;
+    }
+
+    public boolean isOpaqueCube() {
+        return false;
     }
 
     public boolean renderAsNormalBlock() {
         return false;
     }
 
-    public int getRenderType() {
-        return -1;
+    public TileEntity createNewTileEntity(World world, int metadata) {
+        return new TileEntityCable();
     }
 }

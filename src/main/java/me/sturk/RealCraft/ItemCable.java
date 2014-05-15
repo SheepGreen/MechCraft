@@ -11,7 +11,6 @@ public class ItemCable extends Item {
         if(!world.isRemote) {
             if(side==0) {
                 world.setBlock(x,y-1,z,Main.cable);
-                Cable.CableInfo(0, x, y-1, z, world.getBlock(x,y,z));
             }else if(side==1) {
                 world.setBlock(x,y+1,z,Main.cable);
             }else if(side==2) {
