@@ -16,12 +16,15 @@ public class Main {
     public static final String Version = "RealCraft";
     public static CreativeTabs realTab = new RealTab("RealCraft");
     public static Item screwDriver;
+    public static Item itemCable;
     public static Block cable;
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         screwDriver = new ScrewDriver().setUnlocalizedName("ScrewDriver");
+        itemCable = new ItemCable().setUnlocalizedName("ItemCable");
         GameRegistry.registerItem(screwDriver, "ScrewDriver");
+        GameRegistry.registerItem(itemCable, "ItemCable");
 
         cable = new Cable(Material.coral).setBlockName("Cable");
         GameRegistry.registerBlock(cable, "Cable");

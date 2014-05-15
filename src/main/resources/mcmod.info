@@ -1,4 +1,4 @@
-{
+[
 {
     "modid": "realcraft",
     "name": "RealCraft",
@@ -14,4 +14,4 @@
     "dependencies": [
     ]
 }
-}
+]

@@ -10,6 +10,10 @@ public class Cable extends Block {
         setBlockBounds(0.4F, 0.4F, 0.4F, 0.6F, 0.6F, 0.6F);
     }
 
+    public void CableInfo(int side, float x, float y, float z) {
+
+    }
+
     public boolean renderAsNormalBlock() {
         return false;
     }
