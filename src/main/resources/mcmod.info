@@ -1,0 +1,17 @@
+{
+{
+    "modid": "realcraft",
+    "name": "RealCraft",
+    "version": "v1.0",
+    "url": "",
+    "updateUrl": "",
+    "authorList": "sturk5",
+    "credits": "sturk5",
+    "logoFile": "",
+    "screenshots": [
+    ],
+    "parent": "",
+    "dependencies": [
+    ]
+}
+}
