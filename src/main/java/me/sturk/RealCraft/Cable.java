@@ -13,7 +13,7 @@ public class Cable extends BlockContainer {
     public Cable(Material material) {
         super(material);
         setCreativeTab(Main.realTab);
-        setBlockBounds(10*pixel/2, 10*pixel/2, 10*pixel/2, 10*pixel, 10*pixel, 10*pixel);
+        setBlockBounds(10*pixel/2,10*pixel/2,10*pixel/2, 1-10*pixel/2, 1-10*pixel/2, 1-10*pixel/2);
         this.useNeighborBrightness=true;
     }
 
@@ -26,7 +26,7 @@ public class Cable extends BlockContainer {
     }
 
     public boolean renderAsNormalBlock() {
-        return false;
+        return true;
     }
 
     public TileEntity createNewTileEntity(World world, int metadata) {

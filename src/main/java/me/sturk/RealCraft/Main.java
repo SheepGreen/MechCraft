@@ -30,7 +30,7 @@ public class Main {
         GameRegistry.registerItem(screwDriver, "ScrewDriver");
         GameRegistry.registerItem(itemCable, "ItemCable");
 
-        cable = new Cable(Material.coral).setBlockName("Cable");
+        cable = new Cable(Material.iron).setBlockName("Cable");
         GameRegistry.registerBlock(cable, "Cable");
     }
 
