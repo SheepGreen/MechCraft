@@ -6,13 +6,13 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
 public class RealTab extends CreativeTabs {
-    public RealTab(String tabLabel) {
-        super(tabLabel);
-    }
+	public RealTab(String tabLabel) {
+		super(tabLabel);
+	}
 
-    @Override
-    @SideOnly(Side.CLIENT)
-    public Item getTabIconItem() {
-        return Main.screwDriver;
-    }
+	@Override
+	@SideOnly(Side.CLIENT)
+	public Item getTabIconItem() {
+		return Main.screwDriver;
+	}
 }

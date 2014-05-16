@@ -1,7 +1,7 @@
 package me.sturk.RealCraft;
 
 public class CommonProxy {
-    public void registerRenderers() {
+	public void registerRenderers() {
 
-    }
+	}
 }
