@@ -90,7 +90,7 @@ public class TileEntityRenderCable extends TileEntitySpecialRenderer {
 			tessellator.addVertexWithUV(1 - 10 * pixel / 2, 10 * pixel / 2, 10 * pixel / 2, 0 * texturePixel, 0 * texturePixel);
 			tessellator.addVertexWithUV(1 - 10 * pixel / 2, 10 * pixel / 2, 1 - 10 * pixel / 2, 0 * texturePixel, 6 * texturePixel);
 
-			if (drawInside == true) {
+			if (drawInside) {
 				tessellator.addVertexWithUV(10 * pixel / 2, 10 * pixel / 2, 1 - 10 * pixel / 2, 0 * texturePixel, 6 * texturePixel);
 				tessellator.addVertexWithUV(10 * pixel / 2, 1 - 10 * pixel / 2, 1 - 10 * pixel / 2, 0 * texturePixel, 0 * texturePixel);
 				tessellator.addVertexWithUV(1 - 10 * pixel / 2, 1 - 10 * pixel / 2, 1 - 10 * pixel / 2, 6 * texturePixel, 0 * texturePixel);
