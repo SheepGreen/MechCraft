@@ -25,6 +25,7 @@ public class TileEntityRenderCable extends TileEntitySpecialRenderer {
 		GL11.glTranslated(-translationX, -translationY, -translationZ);
 	}
 
+
 	public void drawConnector(ForgeDirection direction) {
 		if (direction.equals(ForgeDirection.UP)) {
 			Tessellator t = Tessellator.instance;
