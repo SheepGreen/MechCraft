@@ -7,7 +7,7 @@ public class KeyInputHandler {
 	@SubscribeEvent
 	public void onKeyInput(InputEvent.KeyInputEvent event) {
 		if(Main.openCraftPack.isPressed()) {
-
+			System.out.println("Key Pressed!");
 		}
 	}
 }

@@ -5,6 +5,6 @@ import net.minecraft.item.ItemArmor;
 public class CraftPack extends ItemArmor {
 
 	public CraftPack() {
-		super(ArmorMaterial.CLOTH, 0, 15);
+		super(ArmorMaterial.CLOTH, 0, 0);
 	}
 }

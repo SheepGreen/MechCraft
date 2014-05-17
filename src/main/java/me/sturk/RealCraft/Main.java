@@ -44,6 +44,7 @@ public class Main {
 		screwDriver = new ScrewDriver().setUnlocalizedName("ScrewDriver");
 		craftPack = new CraftPack().setUnlocalizedName("CraftPack");
 		GameRegistry.registerItem(screwDriver, "ScrewDriver");
+		GameRegistry.registerItem(craftPack, "CraftPack");
 
 		machineGenerator = new MachineGenerator(Material.iron).setBlockName("Generator");
 		machineFurnace = new MachineFurnace(Material.iron).setBlockName("Furnace");
